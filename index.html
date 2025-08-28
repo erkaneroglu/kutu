@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kutu - Advanced Bookmark Management</title>
+    <meta name="description" content="Organize your digital life with Kutu - Professional bookmark management with smart categories, powerful search, and cross-platform sync.">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="source/icon.png" alt="Kutu" class="brand-icon-img">
+                <span class="brand-text">Kutu</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#features" class="nav-link">Features</a>
+                <a href="#premium" class="nav-link">Premium</a>
+                <a href="#download" class="nav-link">Download</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Organize Your Digital Life
+                    <span class="highlight">Manage Your Bookmarks Professionally</span>
+                    with Kutu
+                </h1>
+                <p class="hero-subtitle">
+                    Organize your complex bookmark list with smart categories, powerful search, and automatic synchronization. Available in 23 languages, on all platforms.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">23</span>
+                        <span class="stat-label">Languages</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5★</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3</span>
+                        <span class="stat-label">Platforms</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="https://apps.apple.com/us/app/Kutu-bookmark-manager/id6749794222" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Free
+                    </a>
+                    <button class="btn btn-secondary">
+                        <i class="fas fa-info-circle"></i>
+                        Learn More
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="app-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control red"></span>
+                                <span class="control yellow"></span>
+                                <span class="control green"></span>
+                            </div>
+                            <div class="window-title">Kutu Dashboard</div>
+                        </div>
+                        <div class="window-content">
+                            <div class="sidebar">
+                                <div class="sidebar-item active">
+                                    <i class="fas fa-home"></i>
+                                    <span>All Bookmarks</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-star"></i>
+                                    <span>Favorites</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-user"></i>
+                                    <span>Personal</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-code"></i>
+                                    <span>Software</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-gamepad"></i>
+                                    <span>Entertainment</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Work</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-book"></i>
+                                    <span>Education</span>
+                                </div>
+                                <div class="sidebar-item">
+                                    <i class="fas fa-tags"></i>
+                                    <span>Tags</span>
+                                </div>
+                            </div>
+                            <div class="main-content">
+                                <div class="search-bar">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" placeholder="Search bookmarks...">
+                                </div>
+                                <div class="bookmark-grid">
+                                    <div class="bookmark-card">
+                                        <div class="bookmark-favicon">
+                                            <i class="fab fa-github"></i>
+                                        </div>
+                                        <div class="bookmark-info">
+                                            <h4>GitHub Repository</h4>
+                                            <p>Development projects</p>
+                                        </div>
+                                        <div class="bookmark-priority high"></div>
+                                    </div>
+                                    <div class="bookmark-card">
+                                        <div class="bookmark-favicon">
+                                            <i class="fab fa-youtube"></i>
+                                        </div>
+                                        <div class="bookmark-info">
+                                            <h4>Tutorial Videos</h4>
+                                            <p>Learning resources</p>
+                                        </div>
+                                        <div class="bookmark-priority medium"></div>
+                                    </div>
+                                    <div class="bookmark-card">
+                                        <div class="bookmark-favicon">
+                                            <i class="fas fa-newspaper"></i>
+                                        </div>
+                                        <div class="bookmark-info">
+                                            <h4>Tech News</h4>
+                                            <p>Daily reading</p>
+                                        </div>
+                                        <div class="bookmark-priority low"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Powerful Features for Every User</h2>
+                <p class="section-subtitle">Everything you need to organize and manage your digital bookmarks professionally</p>
+            </div>
+            
+            <!-- Feature Screenshots -->
+            <div class="feature-screenshots">
+                <div class="screenshot-item">
+                    <img src="source/ss1.png" alt="Smart Organization" class="feature-screenshot">
+                    <div class="screenshot-overlay">
+                        <h3>Smart Organization</h3>
+                        <p>Organize with categories and tags</p>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="source/ss2.png" alt="Powerful Search" class="feature-screenshot">
+                    <div class="screenshot-overlay">
+                        <h3>Powerful Search</h3>
+                        <p>Find anything instantly</p>
+                    </div>
+                </div>
+                <div class="screenshot-item">
+                    <img src="source/ss3.png" alt="Beautiful Interface" class="feature-screenshot">
+                    <div class="screenshot-overlay">
+                        <h3>Beautiful Interface</h3>
+                        <p>Clean and modern design</p>
+                    </div>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="audience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Perfect for Every User</h2>
+                <p class="section-subtitle">Tailored solutions for different needs and workflows</p>
+            </div>
+            
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>For Professionals</h3>
+                    <p>Organize your research links, references, and work resources professionally. Create project-based categories and share collections with your team.</p>
+                    <ul class="audience-features">
+                        <li><i class="fas fa-check"></i> Project-based organization</li>
+                        <li><i class="fas fa-check"></i> Team collaboration</li>
+                        <li><i class="fas fa-check"></i> Advanced tagging</li>
+                        <li><i class="fas fa-check"></i> Export capabilities</li>
+                    </ul>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>For Students</h3>
+                    <p>Keep your course materials, research resources, and assignment links organized. Find what you're looking for quickly during exam season.</p>
+                    <ul class="audience-features">
+                        <li><i class="fas fa-check"></i> Course-based folders</li>
+                        <li><i class="fas fa-check"></i> Study reminders</li>
+                        <li><i class="fas fa-check"></i> Priority marking</li>
+                        <li><i class="fas fa-check"></i> Exam preparation</li>
+                    </ul>
+                </div>
+
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Personal Use</h3>
+                    <p>Hobbies, recipes, shopping lists—collect all your digital references in one place. Create personal collections and never lose track of interesting content.</p>
+                    <ul class="audience-features">
+                        <li><i class="fas fa-check"></i> Personal collections</li>
+                        <li><i class="fas fa-check"></i> Recipe organization</li>
+                        <li><i class="fas fa-check"></i> Hobby tracking</li>
+                        <li><i class="fas fa-check"></i> Shopping lists</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Section -->
+    <section id="premium" class="premium">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Unlock Premium Features</h2>
+                <p class="section-subtitle">Take your bookmark management to the next level</p>
+            </div>
+            
+            <div class="pricing-cards">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Weekly</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">2.99</span>
+                            <span class="period">/week</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited bookmarks</li>
+                        <li><i class="fas fa-check"></i> Unlimited categories</li>
+                        <li><i class="fas fa-check"></i> Advanced search & AI</li>
+                        <li><i class="fas fa-check"></i> All 23 languages</li>
+                        <li><i class="fas fa-check"></i> Custom themes</li>
+                        <li><i class="fas fa-check"></i> Cloud synchronization</li>
+                        <li><i class="fas fa-check"></i> Automatic backup</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced export</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Yearly</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">34.99</span>
+                            <span class="period">/year</span>
+                        </div>
+                        <div class="price-note">Save 51%</div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited bookmarks</li>
+                        <li><i class="fas fa-check"></i> Unlimited categories</li>
+                        <li><i class="fas fa-check"></i> Advanced search & AI</li>
+                        <li><i class="fas fa-check"></i> All 23 languages</li>
+                        <li><i class="fas fa-check"></i> Custom themes</li>
+                        <li><i class="fas fa-check"></i> Cloud synchronization</li>
+                        <li><i class="fas fa-check"></i> Automatic backup</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced export</li>
+                    </ul>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Monthly</h3>
+                        <div class="price">
+                            <span class="currency">$</span>
+                            <span class="amount">5.99</span>
+                            <span class="period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited bookmarks</li>
+                        <li><i class="fas fa-check"></i> Unlimited categories</li>
+                        <li><i class="fas fa-check"></i> Advanced search & AI</li>
+                        <li><i class="fas fa-check"></i> All 23 languages</li>
+                        <li><i class="fas fa-check"></i> Custom themes</li>
+                        <li><i class="fas fa-check"></i> Cloud synchronization</li>
+                        <li><i class="fas fa-check"></i> Automatic backup</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                        <li><i class="fas fa-check"></i> Advanced export</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Download for All Platforms</h2>
+                <p class="section-subtitle">Get Kutu on your favorite device and platform</p>
+            </div>
+            
+            <div class="platforms-grid">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-apple"></i>
+                    </div>
+                    <h3>macOS</h3>
+                    <p>Native app for Mac</p>
+                    <a href="https://apps.apple.com/us/app/Kutu-bookmark-manager/id6749794222" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-app-store-ios"></i>
+                    </div>
+                    <h3>iOS</h3>
+                    <p>iPhone</p>
+                    <a href="https://apps.apple.com/us/app/Kutu-bookmark-manager/id6749794222" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-tablet-alt"></i>
+                    </div>
+                    <h3>iPad</h3>
+                    <p>Optimized for iPad</p>
+                    <a href="https://apps.apple.com/us/app/Kutu-bookmark-manager/id6749794222" target="_blank" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have questions? We're here to help!</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Us</h4>
+                            <p>Kutu.app@yahoo.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <img src="source/icon.png" alt="Kutu" class="brand-icon-img">
+                        <span class="brand-text">Kutu</span>
+                    </div>
+                    <p>Professional bookmark management for the modern digital life. Organize, sync, and access your bookmarks across all devices.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#premium">Premium</a></li>
+                        <li><a href="#download">Download</a></li>
+                        <li><a href="#">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-of-service.html">Terms of Service</a></li>
+                        <li><a href="cookie-policy.html">Cookie Policy</a></li>
+                        <li><a href="security.html">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kutu. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge">🔒 SOC 2 Certified</span>
+                    <span class="badge">🛡️ GDPR Compliant</span>
+                    <span class="badge">⭐ 5-Star Rated</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
